@@ -3,6 +3,8 @@
 .sass-cache/
 dist/
 node_modules/
+components/
+coverage.csv
 
 # OS generated files #
 ######################

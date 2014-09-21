@@ -1,0 +1,21 @@
+{
+  "name": "luisah.com",
+  "version": "1.0.0",
+  "homepage": "https://github.com/luisah/luisah.com",
+  "authors": [
+    "Luisa Hurtado <luisah@users.noreply.github.com>"
+  ],
+  "main": "main.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.15",
+    "angular": "~1.2.25",
+    "bootstrap": "~3.2.0"
+  }
+}

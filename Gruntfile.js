@@ -6,9 +6,7 @@ module.exports = function(grunt) {
         src: ['src/**.js'],
       },
       options: {
-        globals: {
-
-        }
+        globals: {}
       }
     },
     compass: {
@@ -27,6 +25,11 @@ module.exports = function(grunt) {
         }
       }
     },
+    venus: {
+      tests: [
+        'src/test/demo.js'
+      ]
+    },
     watch: {
       livereload: {
         options: {
@@ -36,7 +39,7 @@ module.exports = function(grunt) {
       },
       scripts: {
         files: ['src/**/*.js'],
-        tasks: ['jshint'],
+        tasks: ['jshint', 'venus'],
         options: {
           spawn: false,
         },
@@ -79,6 +82,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-venus');
 
   // Dev tasks
   grunt.registerTask('default', ['connect', 'watch']);
